@@ -1,0 +1,222 @@
+/* for GIT */
+
+*{
+    margin:0;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+}
+
+.header{
+    width:100%;
+    height:60px;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.header > .logo-box{
+    width:300px;
+    height:50px;
+}
+
+.header > .consulting-box{
+    width:550px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header > .consulting-box > select{
+    width:130px;
+    height:30px;
+    margin-top:15px;
+    border:1px solid black;
+    border-radius: 5px;
+    padding-left:10px;
+}
+
+.header > .consulting-box > .search-box{
+    width:300px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border:1px solid black;
+    border-radius:5px;
+    margin-right:100px;
+    margin-top:15px;
+}
+
+.header > .consulting-box > .search-box > .icon{
+    width:36px;
+    height:30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header > .consulting-box > .search-box > .icon > img{
+    width:14px;
+    height:14px;
+}
+
+.header > .consulting-box > .search-box > input{
+    width:260px;
+    height:23px;
+    border:none;
+    outline: none;;
+    font-size:16px;
+}
+
+.title{
+    width:80%;
+    height:100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin:auto;
+    margin-top:0px;
+    border-bottom:1px solid rgba(0,0,0,0.3);
+}
+
+.title > .title-box{
+    border:1px solid rgba(0,0,0,0.3);
+    border-bottom:0px;
+    border-radius: 5px 5px 0px 0px;
+    width:300px;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:22px;
+    font-weight:700;
+}
+
+
+
+.content{
+    width:80%;
+    height:auto;
+
+    margin:auto;
+    margin-top:50px;
+
+    display: flex;
+}
+
+.content > .sidebar-box{
+    width:15%;
+    height:400px;
+}
+
+.content > .sidebar-box > .sidebar{
+    width:80%;
+    height:100%;
+    margin:auto;
+
+    border:1px solid rgba(0,0,0,0.3);
+    border-bottom:0px;
+    user-select: none;
+    cursor:pointer;
+}
+
+.content > .sidebar-box > .sidebar > .sidebar-header{
+    width:100%;
+    height:33.333%;
+    border-bottom:1px solid rgba(0,0,0,0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size:22px;
+    font-weight:700;
+    color:black;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.content > .sidebar-box > .sidebar > .sidebar-order{
+    width:100%;
+    height:33.333%;
+    border-bottom:1px solid rgba(0,0,0,0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size:18px;
+    color:black;
+}
+
+.content > .sidebar-box > .sidebar > .sidebar-intro{
+    width:100%;
+    height:calc(33% - 1px);
+    border-bottom:1px solid rgba(0,0,0,0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size:18px;
+    color:rgba(0,0,0,0.1);;
+}
+
+.content > .list-box{
+    width:80%;
+    height:auto;
+    border-top:1px solid rgba(0,0,0,0.3);
+
+}
+
+.content > .list-box > .list{
+    display: flex;
+    width:100%;
+    height:80px;
+    font-size:16px;
+    font-weight:400;
+}
+
+.content > .list-box > .list:first-child{
+    background-color: rgba(0,0,0,0.2);
+        
+    font-size:18px;
+    font-weight:600;
+}
+
+.content > .list-box > .list > .list-content{
+    flex:1;
+    height:100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-right:1px solid rgba(0,0,0,0.3);
+    border-bottom:1px solid rgba(0,0,0,0.3);
+
+}
+
+.content > .list-box > .list > .list-content:first-child{
+    border-left:1px solid rgba(0,0,0,0.3);
+}
+
+.content > .list-box > .list > .list-content > .btn{
+    background-color:#478cfc;
+    width:140px;
+    height:40px;
+    color:#fff;
+    font-size:16px;
+    font-weight:500;
+    border-radius:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor:pointer;
+}

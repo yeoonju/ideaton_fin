@@ -1,0 +1,289 @@
+/* for GIT */
+
+*{
+    margin:0;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+}
+
+.header{
+    width:100%;
+    height:60px;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.header > .logo-box{
+    width:300px;
+    height:50px;
+}
+
+.header > .search-box{
+    width:300px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border:1px solid black;
+    border-radius:5px;
+    margin-right:100px;
+    margin-top:15px;
+}
+
+.header > .search-box > .icon{
+    width:36px;
+    height:30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header > .search-box > .icon > img{
+    width:14px;
+    height:14px;
+}
+
+.header > .search-box > input{
+    width:260px;
+    height:23px;
+    border:none;
+    outline: none;;
+    font-size:16px;
+}
+
+.content{
+    width:1000px;
+    margin:auto;
+    height: auto;
+    display: flex;
+}
+
+.content > .data-box{
+    width:80%;
+    height:auto;
+}
+
+.content > .data-box > .select-box{
+    width:60%;
+    height:40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border:1px solid rgba(0,0,0,0.1);
+    border-right:0px;
+    margin:auto;
+    margin-bottom:30px;
+    margin-top:50px;
+}
+
+.content > .data-box > .select-box > .select{
+    flex:1;
+    height:100%;
+    border-right:1px solid rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:14px;
+    color:rgba(0,0,0,0.8);
+    
+    cursor:pointer;
+    user-select: none;
+}
+
+.content > .data-box > .select-box > .taged{
+    border:1px solid #478cfc;
+    color:#478cfc;
+}
+
+.content > .data-box > h2{
+    line-height:80px;
+    font-size:17px;
+    font-weight:400;
+}
+
+.content > .data-box > h2 > span{
+    color:#478cfc;
+    font-size:20px;
+}
+
+.content > .data-box > .graph{
+    width:100%;
+    height:300px;
+}
+
+.content > .data-box > .graph > .table-box{
+    width:100%;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top:1px solid black;
+    border-left:1px solid black;
+}
+
+.content > .data-box > .graph > .table-box:last-child{
+    border-bottom:1px solid black;
+}
+
+.content > .data-box > .graph > .table-box > .table{
+    flex:1;
+    height:100%;
+    border-right:1px solid black;
+}
+
+.content > .data-box > .graph > .table-box > .table > h2{
+    text-align: center;
+    font-size:36px;
+    font-weight:300;
+    margin-top:20px;
+}
+
+.content > .data-box > .graph > .table-box > .table > h2 > span{
+    font-size:24px;
+}
+
+.content > .data-box > .graph > .table-box > .table > h4{
+    font-size:24px;
+    text-align: center;
+    font-weight:300;
+    line-height:40px;
+}
+
+.content > .data-box > .graph > .table-box > .table > p{
+    font-weight:200;
+    font-size:16px;
+    text-align: center;
+}
+
+.content > .data-box > .spec-title{
+    width:100%;
+    height:40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border:1px solid rgba(0,0,0,0.1);
+    border-right:0px;
+    margin:auto;
+    margin-bottom:30px;
+    margin-top:50px;
+}
+
+.content > .data-box > .spec-title > .spec{
+    flex:1;
+    height:100%;
+    border-right:1px solid rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:14px;
+    color:rgba(0,0,0,0.8);
+    cursor:pointer;
+    user-select: none;
+}
+
+.content > .data-box > .spec-title > .taged{
+    border:1px solid #478cfc;
+    color:#478cfc;
+}
+
+
+.content > .data-box > .spec-box{
+    width: calc(100% - 40px);
+    height:260px;
+    border:1px solid #478cfc;
+    padding:20px;
+
+    display: none;
+}
+
+.content > .data-box > .spec-box > p{
+    line-height:40px;
+    font-size:18px;
+    font-weight:300;
+}
+
+.content > .sidebar-box{
+    width:20%;
+    height:auto;
+    padding-top:200px;
+}
+
+.content > .sidebar-box > .sidebar{
+    width:70%;
+    margin:auto;
+    height:350px;
+}
+
+.content > .sidebar-box > .sidebar > .sidebar-header{
+    border-radius:5px 5px 0px 0px;
+    background-color:#292929;
+    width:100%;
+    height:calc(26% - 15px);
+    padding-top:15px;
+}
+
+.content > .sidebar-box > .sidebar > .sidebar-header > p{
+    text-align: center;
+    color:#fff;
+    font-size:18px;
+    line-height:26px;
+}
+
+.content > .sidebar-box > .sidebar > .sidebar-content{
+    border-left:1px solid #292929;
+    border-right:1px solid #292929;
+    width:100%;
+    height:calc(48% - 15px);
+    padding-top:15px;
+}
+
+.content > .sidebar-box > .sidebar > .sidebar-content > ul > a{
+    text-decoration: none;
+}
+
+.content > .sidebar-box > .sidebar > .sidebar-content > ul > a > li{
+    font-size:16px;
+    margin-left:-10px;
+    line-height:40px;
+    color:black;
+}
+
+.content > .sidebar-box > .sidebar > .sidebar-content > ul > li{
+    font-size:16px;
+    margin-left:-10px;
+    line-height:40px;
+}
+
+.content > .sidebar-box > .sidebar > .sidebar-footer{
+    border-radius:0px 0px 5px 5px;
+    background-color:#292929;
+    width:100%;
+    height:calc(26% - 15px);
+    padding-top:15px;
+}
+
+.content > .sidebar-box > .sidebar > .sidebar-footer > .img-box {
+    width:100%;
+    height:30%;
+    display: flex;
+
+    justify-content: center;
+}
+
+.content > .sidebar-box > .sidebar > .sidebar-footer > .img-box > img{
+    width:30px;
+
+}
+
+.content > .sidebar-box > .sidebar > .sidebar-footer > p{
+    color:#fff;
+    font-size:20px;
+    font-weight:600;
+    text-align: center;
+}
